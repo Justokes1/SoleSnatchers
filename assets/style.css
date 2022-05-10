@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+/* STYLES FOR NAV */
+.logo h1{
+  font-family: 'Cookie', cursive;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+color: #DB8F13;
+height: 56px;
+padding: 0px 1rem;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #DB8F13;
+}
+
+a:visited{
+  color:inherit;
+}
+
+/* STYLES FOR HOME PAGE */
+
+.hero {
+  width: 100%;
+  height: 75vh;
+  background: url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+
+/* STYLES FOR GRID */
+
+.product, .card, .contact-us{
+  margin-bottom: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.products, .cards, .contact-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* At 600px 2 column */
+@media (min-width: 600px) {
+  .products, .cards, .contact-us{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* At 900px 3 columns */
+@media (min-width: 900px) {
+  .products, .cards { 
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* STYLES FOR PRODUCTS */
+
+.products-hero {
+  width: 100%;
+  height: 75vh;
+  background: url(img/prodHero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.products, .cards {
+  margin-bottom: 1rem;
+}
+
+.product, .card {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.details p {
+  padding:1rem 0 ;
+}
+
+h2 {
+  color: #DB8F13;
+}
+
+.card img {
+  background-position: center;
+  overflow: hidden;
+}
+
+.product button, .card button {
+  background-color: #DB8F13;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* STYLES FOR CONTACT */
+
+.contact-us {
+  background: #DB8F13;
+  color: black;
+  max-height: 75vh;
+  margin: 1rem auto;
+}
+
+.info {
+  width: 100%;
+  height: 75vh;
+  background: url(img/contact-hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid black; /* Gray border */
+  border-radius: 5px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  color: #DB8F13;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 1rem;
+} 
+
+/* STYLES FOR FOOTER */
+
+footer{
+  position: sticky;
+  bottom: 0;
+  background-color: black;
+  height: auto;
+  width: 100vw;
+  color: #DB8F13;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content h4 {
+  padding: 1rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 2rem;
+  font-family: 'Cookie', cursive;
+}
+
+.description {
+  max-width: 500px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #DBDBDF;
+  padding: 1rem;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 ;
+}
+
+.socials li{
+  margin: 0 1rem;
+}
+
+.copyright {
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+  color: #DBDBDF;
+  letter-spacing: .3rem;
+  padding: 1rem;
+}
+
+/* .content ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+
+
+
