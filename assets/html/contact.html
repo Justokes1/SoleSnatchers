@@ -15,7 +15,7 @@
 <body>
 
   <header>
-    <div class="logo"><h1>Sole Snatchers</h1></div>
+    <div class="logo"><a href="../../index.html"><h1>Sole Snatchers</h1></a></div>
 
     <nav>
       <ul>
@@ -24,25 +24,27 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="cart"><img src="../img/cart.ico" alt="cart"></div>
   </header>
 
   <section class="contact-us">
     <div class="info"></div>
 
-    <div class="form">
-      <div class="container">
+    <div class="right">
+      <div class="form">
         <form action="action_page.php">
       
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your First name..">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
       
-          <label for="country">Buy or Sell</label>
-          <select id="country" name="country">
-            <option value="australia">Buy</option>
-            <option value="canada">Sell</option>
+          <label for="barter">Buy or Sell</label>
+          <select id="barter" name="country">
+            <option value="Buy">Buy</option>
+            <option value="Sell">Sell</option>
           </select>
       
           <label for="subject">Subject</label>
@@ -57,13 +59,15 @@
 
   <footer>
     <section class="content">
-      <h4>Sole Snatchers</h4>
+      <h3>Sole Snatchers</h3>
+
       <ul class="socials">
         <li><a href=""><img src="../img/twitter-icon.jpg" alt="twitter logo"></a></li>
         <li><a href=""><img src="../img/facebook-icon.jpg" alt="twitter logo"></a></li>
         <li><a href=""><img src="../img/youtube-icon.jpg" alt="twitter logo"></a></li>
         <li><a href=""><img src="../img/insta-icon.jpg" alt="twitter logo"></a></li>
       </ul>
+
       <p class="copyright"> Website Imagined By: Justin Stokes | Copyright 2022 | All Rights Reserved</p>
     </section>
   </footer>
